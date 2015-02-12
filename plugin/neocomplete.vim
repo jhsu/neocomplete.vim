@@ -28,12 +28,6 @@ if exists('g:loaded_neocomplete')
 endif
 let g:loaded_neocomplete = 1
 
-if !(has('lua'))
-  echomsg 'neocomplete does not work this version of Vim.'
-  echomsg 'It requires "if_lua" enabled Vim(7.3.885 or above).'
-  finish
-endif
-
 let s:save_cpo = &cpo
 set cpo&vim
 
